@@ -445,88 +445,115 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PARA QUEM É / PARA QUEM NÃO É */}
-      <section className="py-14 sm:py-20 bg-white">
+      {/* PRODUCT SHOWCASE SECTION */}
+      <section className="py-14 sm:py-20 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          
-          <motion.div 
+
+          <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             variants={fadeIn}
-            className="text-center max-w-3xl mx-auto mb-10 sm:mb-16 space-y-4"
+            className="text-center max-w-3xl mx-auto mb-12 space-y-4"
           >
             <div className="inline-block px-3 py-1 rounded-full bg-emerald-600/5 text-emerald-700 text-xs font-bold uppercase tracking-wider">
-              Qualificação de Compra
+              Sobre o Produto
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-              Para quem este e-book é indicado?
+              Tudo o que você precisa em um só lugar
             </h2>
             <p className="text-slate-500 text-base sm:text-lg">
-              Veja se você se identifica com as metas e o método que estruturamos neste material.
+              Um guia completo, prático e ilustrado para transformar sua rotina com Pilates — do conforto da sua casa.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            
-            {/* PARA QUEM É */}
-            <motion.div 
-              initial={{ opacity: 0, x: -30 }}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+            {/* Cover image showcase */}
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="bg-emerald-50/20 border border-emerald-100 rounded-3xl p-8 sm:p-10 space-y-6 shadow-sm"
+              transition={{ duration: 0.7, ease: "easeOut" }}
+              className="flex justify-center"
             >
-              <h3 className="text-xl sm:text-2xl font-bold text-slate-900 flex items-center gap-2">
-                <span className="p-1 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center">
-                  <Check className="w-5 h-5 stroke-[2.5]" />
-                </span>
-                Este material é ideal para:
-              </h3>
-              <ul className="space-y-4">
-                {[
-                  "Iniciantes absolutos no Pilates que desejam começar em casa com segurança.",
-                  "Pessoas que passam horas sentadas e desejam melhorar sua postura.",
-                  "Quem sofre com dores recorrentes nas costas e articulações.",
-                  "Pessoas sedentárias que desejam voltar a se mover com suavidade.",
-                  "Quem deseja conquistar mais flexibilidade e consciência corporal no dia a dia."
-                ].map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
-                    <span className="text-sm sm:text-base text-slate-700 font-medium">{item}</span>
-                  </li>
-                ))}
-              </ul>
+              <div className="relative group">
+                {/* Glow shadow */}
+                <div className="absolute -inset-4 bg-gradient-to-br from-teal-400/20 via-emerald-300/10 to-sky-300/10 rounded-3xl blur-2xl scale-95 group-hover:scale-100 transition-transform duration-500" />
+                {/* Cover card */}
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-100 group-hover:-translate-y-2 transition-transform duration-500">
+                  <Image
+                    src="/clinicflow-cover.png"
+                    alt="Capa do E-book Pilates para Iniciantes - ClinicFlow"
+                    width={551}
+                    height={387}
+                    className="w-full max-w-[480px] h-auto object-contain"
+                    priority
+                  />
+                  {/* Shine overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/10 to-white/20 pointer-events-none" />
+                </div>
+                {/* Badge floating */}
+                <div className="absolute -top-4 -right-4 bg-emerald-600 text-white text-xs font-extrabold px-3 py-1.5 rounded-full shadow-lg rotate-6">
+                  PDF Digital
+                </div>
+              </div>
             </motion.div>
 
-            {/* PARA QUEM NÃO É */}
-            <motion.div 
-              initial={{ opacity: 0, x: 30 }}
+            {/* Info side */}
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="bg-red-50/10 border border-red-100/60 rounded-3xl p-8 sm:p-10 space-y-6 shadow-sm"
+              transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
+              className="space-y-8"
             >
-              <h3 className="text-xl sm:text-2xl font-bold text-slate-900 flex items-center gap-2">
-                <span className="p-1 rounded-xl bg-red-50 text-red-700 flex items-center justify-center">
-                  <X className="w-5 h-5 stroke-[2.5]" />
-                </span>
-                Este material NÃO é indicado para:
-              </h3>
-              <ul className="space-y-4">
+              {/* Brand logo */}
+              <div className="flex items-center gap-3">
+                <Image
+                  src="/logo.png"
+                  alt="ClinicFlow"
+                  width={140}
+                  height={56}
+                  className="h-12 w-auto object-contain"
+                />
+              </div>
+
+              <div className="space-y-3">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-tight">
+                  Pilates para Iniciantes
+                </h3>
+                <p className="text-slate-500 text-base leading-relaxed">
+                  O guia prático da ClinicFlow desenvolvido por especialistas em fisioterapia e bem-estar, voltado para quem quer começar com segurança, evoluir no próprio ritmo e sentir resultados reais.
+                </p>
+              </div>
+
+              {/* Feature pills */}
+              <ul className="space-y-3">
                 {[
-                  "Pessoas que buscam fórmulas mágicas sem precisar fazer exercícios.",
-                  "Praticantes avançados que esperam acrobacias ou aparelhos complexos.",
-                  "Pessoas com lesões agudas graves que requerem atendimento médico presencial imediato.",
-                  "Quem não está disposto a ler o guia e seguir as orientações passo a passo.",
-                  "Quem procura um livro impresso entregue pelos correios (o material é 100% digital)."
+                  { icon: "📄", text: "Formato PDF — acesso imediato no celular, tablet ou computador" },
+                  { icon: "🧘", text: "Exercícios guiados passo a passo com ilustrações" },
+                  { icon: "🏠", text: "Praticável em casa, sem equipamentos" },
+                  { icon: "✅", text: "Ideal para iniciantes e praticantes intermediários" },
+                  { icon: "🔒", text: "Garantia de 7 dias — sem riscos" },
                 ].map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-3 text-slate-555">
-                    <X className="w-5 h-5 text-red-500 shrink-0 mt-0.5" />
-                    <span className="text-sm sm:text-base text-slate-600">{item}</span>
+                  <li key={idx} className="flex items-start gap-3 bg-slate-50 hover:bg-emerald-50/40 border border-slate-100 hover:border-emerald-100 rounded-2xl px-4 py-3 transition-colors duration-200">
+                    <span className="text-lg leading-none mt-0.5">{item.icon}</span>
+                    <span className="text-sm sm:text-base text-slate-700 font-medium">{item.text}</span>
                   </li>
                 ))}
               </ul>
+
+              {/* CTA mini */}
+              <motion.button
+                onClick={() => scrollIntoView("cta-final")}
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-2xl shadow-lg hover:shadow-emerald-200 transition-all duration-300 cursor-pointer text-base"
+              >
+                Quero meu e-book agora
+                <ChevronRight className="w-5 h-5" />
+              </motion.button>
             </motion.div>
 
           </div>
