@@ -118,7 +118,7 @@ export default function Home() {
           </div>
 
           {/* Main Hero grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-8 items-center">
             
             {/* Left Content */}
             <div className="lg:col-span-7 space-y-6 sm:space-y-8 text-center lg:text-left">
@@ -288,7 +288,7 @@ export default function Home() {
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
             {/* Benefit Card 1 */}
-            <motion.div variants={fadeIn} whileHover="hover" className="border border-slate-100/80 rounded-3xl p-8 bg-slate-50/50 hover:bg-white hover:shadow-xl hover:border-emerald-100 transition-all duration-300">
+            <motion.div variants={fadeIn} whileHover="hover" className="border border-slate-100/80 rounded-3xl p-5 sm:p-8 bg-slate-50/50 hover:bg-white hover:shadow-xl hover:border-emerald-100 transition-all duration-300">
               <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-6 border border-emerald-100/50">
                 <Activity className="w-6 h-6 stroke-[2]" />
               </div>
@@ -299,7 +299,7 @@ export default function Home() {
             </motion.div>
 
             {/* Benefit Card 2 */}
-            <motion.div variants={fadeIn} whileHover="hover" className="border border-slate-100/80 rounded-3xl p-8 bg-slate-50/50 hover:bg-white hover:shadow-xl hover:border-emerald-100 transition-all duration-300">
+            <motion.div variants={fadeIn} whileHover="hover" className="border border-slate-100/80 rounded-3xl p-5 sm:p-8 bg-slate-50/50 hover:bg-white hover:shadow-xl hover:border-emerald-100 transition-all duration-300">
               <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-6 border border-emerald-100/50">
                 <Dumbbell className="w-6 h-6 stroke-[2]" />
               </div>
@@ -310,7 +310,7 @@ export default function Home() {
             </motion.div>
 
             {/* Benefit Card 3 */}
-            <motion.div variants={fadeIn} whileHover="hover" className="border border-slate-100/80 rounded-3xl p-8 bg-slate-50/50 hover:bg-white hover:shadow-xl hover:border-emerald-100 transition-all duration-300">
+            <motion.div variants={fadeIn} whileHover="hover" className="border border-slate-100/80 rounded-3xl p-5 sm:p-8 bg-slate-50/50 hover:bg-white hover:shadow-xl hover:border-emerald-100 transition-all duration-300">
               <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-6 border border-emerald-100/50">
                 <Layers className="w-6 h-6 stroke-[2]" />
               </div>
@@ -321,7 +321,7 @@ export default function Home() {
             </motion.div>
 
             {/* Benefit Card 4 */}
-            <motion.div variants={fadeIn} whileHover="hover" className="border border-slate-100/80 rounded-3xl p-8 bg-slate-50/50 hover:bg-white hover:shadow-xl hover:border-emerald-100 transition-all duration-300">
+            <motion.div variants={fadeIn} whileHover="hover" className="border border-slate-100/80 rounded-3xl p-5 sm:p-8 bg-slate-50/50 hover:bg-white hover:shadow-xl hover:border-emerald-100 transition-all duration-300">
               <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-6 border border-emerald-100/50">
                 <ShieldCheck className="w-6 h-6 stroke-[2]" />
               </div>
@@ -332,7 +332,7 @@ export default function Home() {
             </motion.div>
 
             {/* Benefit Card 5 */}
-            <motion.div variants={fadeIn} whileHover="hover" className="border border-slate-100/80 rounded-3xl p-8 bg-slate-50/50 hover:bg-white hover:shadow-xl hover:border-emerald-100 transition-all duration-300">
+            <motion.div variants={fadeIn} whileHover="hover" className="border border-slate-100/80 rounded-3xl p-5 sm:p-8 bg-slate-50/50 hover:bg-white hover:shadow-xl hover:border-emerald-100 transition-all duration-300">
               <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-6 border border-emerald-100/50">
                 <TrendingUp className="w-6 h-6 stroke-[2]" />
               </div>
@@ -343,7 +343,7 @@ export default function Home() {
             </motion.div>
 
             {/* Benefit Card 6 */}
-            <motion.div variants={fadeIn} whileHover="hover" className="border border-slate-100/80 rounded-3xl p-8 bg-slate-50/50 hover:bg-white hover:shadow-xl hover:border-emerald-100 transition-all duration-300">
+            <motion.div variants={fadeIn} whileHover="hover" className="border border-slate-100/80 rounded-3xl p-5 sm:p-8 bg-slate-50/50 hover:bg-white hover:shadow-xl hover:border-emerald-100 transition-all duration-300">
               <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-6 border border-emerald-100/50">
                 <Smile className="w-6 h-6 stroke-[2]" />
               </div>
@@ -366,7 +366,7 @@ export default function Home() {
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             variants={fadeIn}
-            className="text-center max-w-3xl mx-auto mb-12 space-y-4"
+            className="text-center max-w-3xl mx-auto mb-8 sm:mb-12 space-y-4"
           >
             <div className="inline-block px-3 py-1 rounded-full bg-emerald-600/5 text-emerald-700 text-xs font-bold uppercase tracking-wider">
               Sobre o Produto
@@ -502,7 +502,7 @@ export default function Home() {
       {/* GARANTIA SECTION */}
       <section className="py-14 sm:py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6">
-          <div className="border border-slate-100 rounded-[32px] p-8 sm:p-12 bg-slate-50/50 flex flex-col md:flex-row items-center gap-8 shadow-sm">
+          <div className="border border-slate-100 rounded-[32px] p-6 sm:p-12 bg-slate-50/50 flex flex-col md:flex-row items-center gap-8 shadow-sm">
             <div className="relative shrink-0">
               {/* Golden circular badge mockup */}
               <div className="w-28 h-28 sm:w-36 sm:h-36 rounded-full bg-gradient-to-tr from-amber-500 to-yellow-300 flex items-center justify-center shadow-lg shadow-amber-500/10">
@@ -579,7 +579,7 @@ export default function Home() {
           </p>
 
           {/* PRICING CARD */}
-          <div className="max-w-md mx-auto bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl p-8 sm:p-10 text-center space-y-6 shadow-2xl">
+          <div className="max-w-md mx-auto bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl p-6 sm:p-10 text-center space-y-6 shadow-2xl">
             <div className="space-y-1">
               <span className="text-slate-400 line-through text-sm font-medium">De R$ 97,00</span>
               <div className="flex items-center justify-center gap-2">

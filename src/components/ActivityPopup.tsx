@@ -132,7 +132,7 @@ export default function ActivityPopup({
   };
 
   return (
-    <div className="fixed bottom-4 left-4 sm:top-6 sm:right-6 sm:bottom-auto sm:left-auto z-55 pointer-events-none max-w-sm w-[calc(100%-2rem)] sm:w-full">
+    <div className="fixed top-20 left-4 right-4 sm:top-6 sm:right-6 sm:left-auto sm:bottom-auto z-55 pointer-events-none max-w-sm w-[calc(100%-2rem)] sm:w-full">
       <AnimatePresence>
         {currentNotification && (
           <motion.div
