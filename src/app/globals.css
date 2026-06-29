@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-plus-jakarta), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  
+  --color-primary: #3d5f47;
+  --color-primary-medium: #5f8a6b;
+  --color-primary-light: #e8f0ea;
+  
+  --color-secondary: #0070f3;
+  --color-secondary-light: #e6f0ff;
+  
+  --color-sage-50: #f4f7f5;
+  --color-sage-100: #e5ede7;
+  --color-sage-200: #cedcd2;
+  --color-sage-300: #abc2b0;
+  --color-sage-400: #80a187;
+  --color-sage-500: #5d8165;
+  --color-sage-600: #47664e;
+  --color-sage-700: #3b5240;
+  --color-sage-800: #314234;
+  --color-sage-900: #29372c;
+  --color-sage-950: #151e16;
+
+  --color-sky-light: #f0f7ff;
+}
+
+body {
+  background-color: var(--color-slate-50);
+  color: var(--color-slate-900);
+}
+
+/* Custom 3D book mockup classes */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Soft pulse animation for CTA */
+@keyframes softPulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 4px 20px rgba(93, 129, 101, 0.4);
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0 10px 30px rgba(93, 129, 101, 0.6);
+  }
+}
+
+.animate-soft-pulse {
+  animation: softPulse 2.5s infinite ease-in-out;
+}
+
