@@ -571,11 +571,11 @@ export default function Home() {
           {/* PRICING CARD */}
           <div className="max-w-md mx-auto bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl p-6 sm:p-10 text-center space-y-6 shadow-2xl">
             <div className="space-y-1">
-              <span className="text-slate-400 line-through text-sm font-medium">De R$ 97,00</span>
+              <span className="text-slate-400 line-through text-sm font-medium">De R$ 47,00</span>
               <div className="flex items-center justify-center gap-2">
                 <span className="text-2xl font-bold text-slate-300 self-start mt-2">Por apenas</span>
-                <span className="text-5xl sm:text-6xl font-black text-white tracking-tight">R$ 37</span>
-                <span className="text-xl font-bold text-slate-300 self-end mb-2">,90</span>
+                <span className="text-5xl sm:text-6xl font-black text-white tracking-tight">R$ 19</span>
+                <span className="text-xl font-bold text-slate-300 self-end mb-2">,00</span>
               </div>
               <span className="text-[11px] text-emerald-400 font-semibold block uppercase tracking-wide">
                 Pagamento único • Sem mensalidades
