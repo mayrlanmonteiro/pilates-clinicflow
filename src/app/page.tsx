@@ -242,7 +242,7 @@ export default function Home() {
               onClick={() => scrollIntoView("cta-final")}
               className="w-full sm:w-auto px-8 py-4.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-2xl font-bold text-base shadow-lg shadow-emerald-600/20 hover:shadow-emerald-600/35 transition-all transform hover:scale-[1.01] inline-flex items-center justify-center gap-2 cursor-pointer"
             >
-              Comprar E-book Agora
+              Quero meu e-book agora
             </button>
           </div>
         </div>
