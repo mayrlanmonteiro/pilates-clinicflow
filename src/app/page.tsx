@@ -5,11 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { 
   Check, 
-  X, 
   Award, 
-  Sparkles, 
-  BookOpen, 
-  Heart, 
   Smile, 
   Activity,
   Dumbbell, 
@@ -17,9 +13,6 @@ import {
   Lock, 
   Mail, 
   Play, 
-  Smartphone, 
-  Tablet, 
-  FileText, 
   Clock, 
   Layers, 
   ChevronRight,
@@ -53,13 +46,6 @@ export default function Home() {
   // Video modal / simulation play state
   const [isPlaying, setIsPlaying] = useState(false);
 
-  const scrollIntoView = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   // Animation variants for section headers and cards
   const fadeIn = {
     hidden: { opacity: 0, y: 30 },
@@ -74,10 +60,6 @@ export default function Home() {
         staggerChildren: 0.15
       }
     }
-  };
-
-  const cardHover = {
-    hover: { y: -8, transition: { duration: 0.3, ease: "easeInOut" as const } }
   };
 
   return (
