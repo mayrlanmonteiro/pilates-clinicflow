@@ -149,13 +149,15 @@ export default function Home() {
 
               {/* Hero CTA buttons */}
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
-                <button
-                  onClick={() => scrollIntoView("cta-final")}
+                <a
+                  href="https://pay.cakto.com.br/ec7uubu_951437"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full sm:w-auto px-8 py-4.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-2xl font-bold text-base shadow-lg shadow-emerald-600/20 hover:shadow-emerald-600/35 transition-all duration-300 transform hover:scale-[1.02] flex items-center justify-center gap-2 cursor-pointer animate-soft-pulse"
                 >
                   <Zap className="w-5 h-5 fill-current" />
                   Quero Meu E-book Agora
-                </button>
+                </a>
 
               </div>
 
@@ -271,12 +273,14 @@ export default function Home() {
           </div>
 
           <div className="pt-4">
-            <button
-              onClick={() => scrollIntoView("cta-final")}
+            <a
+              href="https://pay.cakto.com.br/ec7uubu_951437"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full sm:w-auto px-8 py-4.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-2xl font-bold text-base shadow-lg shadow-emerald-600/20 hover:shadow-emerald-600/35 transition-all transform hover:scale-[1.01] inline-flex items-center justify-center gap-2 cursor-pointer"
             >
               Quero meu e-book agora
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -480,15 +484,17 @@ export default function Home() {
               </ul>
 
               {/* CTA mini */}
-              <motion.button
-                onClick={() => scrollIntoView("cta-final")}
+              <motion.a
+                href="https://pay.cakto.com.br/ec7uubu_951437"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-2xl shadow-lg hover:shadow-emerald-200 transition-all duration-300 cursor-pointer text-base"
               >
                 Quero meu e-book agora
                 <ChevronRight className="w-5 h-5" />
-              </motion.button>
+              </motion.a>
             </motion.div>
 
           </div>
