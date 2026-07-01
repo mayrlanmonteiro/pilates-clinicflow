@@ -28,7 +28,7 @@ import {
   Volume2
 } from "lucide-react";
 
-import Book3D from "@/components/Book3D";
+
 import FaqAccordion from "@/components/FaqAccordion";
 import TestimonialSlider from "@/components/TestimonialSlider";
 import ActivityPopup from "@/components/ActivityPopup";
@@ -175,7 +175,40 @@ export default function Home() {
 
             {/* Right mock-3D E-book mock */}
             <div className="lg:col-span-5 flex justify-center items-center">
-              <Book3D />
+              <motion.div
+                animate={{
+                  y: [0, -12, 0],
+                }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+                className="relative w-full max-w-[500px]"
+              >
+                {/* Dynamic Floating Shadow */}
+                <motion.div
+                  className="absolute w-[80%] h-[30px] bg-slate-900/20 rounded-[100%] blur-xl left-10"
+                  style={{ bottom: "-10%", zIndex: -10 }}
+                  animate={{
+                    scale: [0.8, 1, 0.8],
+                    opacity: [0.5, 0.8, 0.5]
+                  }}
+                  transition={{
+                    duration: 4,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                />
+                <Image
+                  src="/pilates-kit.png"
+                  alt="Kit Completo de Pilates ClinicFlow"
+                  width={800}
+                  height={600}
+                  className="w-full h-auto object-contain drop-shadow-2xl"
+                  priority
+                />
+              </motion.div>
             </div>
 
           </div>
