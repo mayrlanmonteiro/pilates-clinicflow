@@ -590,7 +590,7 @@ export default function Home() {
 
             <div className="space-y-4">
               <a
-                href="https://pay.hotmart.com/mock-link-check-out"
+                href="https://pay.cakto.com.br/ec7uubu_951437"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full py-4.5 bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-black text-lg rounded-2xl shadow-xl shadow-emerald-500/20 hover:shadow-emerald-500/35 transition-all duration-300 transform hover:scale-[1.02] flex items-center justify-center gap-2"
